@@ -9,7 +9,6 @@
 // Code
 function totalDigitRekursif(angka) {
     var str = angka.toString()
-    console.log(str);
     if(str.length === 1) return Number(str)
     return Number(str[0]) + totalDigitRekursif(str.slice(1))
 }
